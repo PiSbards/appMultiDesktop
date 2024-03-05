@@ -138,6 +138,7 @@
             this.btnEditar.TabIndex = 8;
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnExcluir
             // 
@@ -153,6 +154,7 @@
             this.btnExcluir.TabIndex = 9;
             this.btnExcluir.Text = "EXCLUIR";
             this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnSair
             // 
@@ -180,6 +182,7 @@
             this.dgvPessoa.ReadOnly = true;
             this.dgvPessoa.Size = new System.Drawing.Size(927, 250);
             this.dgvPessoa.TabIndex = 11;
+            this.dgvPessoa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPessoa_CellClick);
             // 
             // btnLocalizar
             // 
@@ -194,6 +197,7 @@
             this.btnLocalizar.TabIndex = 12;
             this.btnLocalizar.Text = "LOCALIZAR";
             this.btnLocalizar.UseVisualStyleBackColor = false;
+            this.btnLocalizar.Click += new System.EventHandler(this.btnLocalizar_Click);
             // 
             // label4
             // 

@@ -40,7 +40,7 @@ namespace appMultiDesktop
 
         public void Inserir(string nome, string idade, string cidade)
         {
-            string sql = "INSERT INTO pessoa(pessoa,idade,cidade) VALUES('" + nome + "','" + idade + "','" + cidade + "')";
+            string sql = "INSERT INTO pessoa(nome,idade,cidade) VALUES('" + nome + "','" + idade + "','" + cidade + "')";
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();
@@ -50,9 +50,9 @@ namespace appMultiDesktop
             conn.Close();
         }
 
-        public void Atualizar(Pessoa pessoa)
+        public void Atualizar(int id, string nome, string idade, string cidade)
         {
-            string sql = "UPDATE pessoa SET nome='"+pessoa.nome+"',idade='"+pessoa.idade+"',cidade='"+pessoa.cidade+"' WHERE id='"+pessoa.id+"'";
+            string sql = "UPDATE pessoa SET nome='"+nome+"',idade='"+idade +"',cidade='"+cidade+"' WHERE id='"+id+"'";
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();
